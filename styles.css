@@ -80,6 +80,13 @@ h3 { margin-bottom: 9px; font-size: 1.2rem; letter-spacing: -.035em; line-height
 .archive-group ul { margin: 0; padding-left: 20px; color: var(--muted); }
 .archive-group li { margin: 7px 0; }
 .speaking-archive .archive-grid { grid-template-columns: 1fr; }
+.additional-events { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-bottom: 14px; }
+.additional-event-card { overflow: hidden; border: 1px solid var(--line); background: var(--white); }
+.additional-event-card img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-bottom: 1px solid var(--line); }
+.additional-event-copy { padding: 18px; }
+.additional-event-copy .speaking-year { display: block; margin-bottom: 10px; }
+.additional-event-copy h3 { margin-bottom: 8px; font-size: 1.05rem; }
+.additional-event-copy p { margin: 0; color: var(--muted); font-size: .78rem; }
 .split-block { display: grid; grid-template-columns: .75fr 1.25fr; gap: 100px; border-top: 1px solid var(--line); }
 .compact-heading { margin-bottom: 0; }
 .speaking-list { border-top: 1px solid var(--line); }
@@ -147,6 +154,7 @@ h3 { margin-bottom: 9px; font-size: 1.2rem; letter-spacing: -.035em; line-height
   .timeline-item { grid-template-columns: 1fr; gap: 9px; }
   .speaking-item { grid-template-columns: 52px 1fr; gap: 12px; }
   .speaking-featured h3 { font-size: 1.25rem; }
+  .additional-events { grid-template-columns: 1fr; }
   .credential-list { grid-template-columns: 1fr; }
   .credential-panel, .education-panel { padding: 27px; }
   .site-footer { align-items: flex-start; flex-direction: column; gap: 7px; }
