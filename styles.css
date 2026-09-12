@@ -75,8 +75,9 @@ h3 { margin-bottom: 9px; font-size: 1.2rem; letter-spacing: -.035em; line-height
 .archive-details { margin-top: 36px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .archive-details summary { display: flex; justify-content: space-between; cursor: pointer; padding: 20px 0; font-weight: 800; list-style: none; }
 .archive-details summary::-webkit-details-marker { display: none; }
-.arrow-icon { display: inline-flex; width: 1em; height: 1em; flex: 0 0 1em; align-items: center; justify-content: center; }
-.arrow-icon svg { display: block; width: 100%; height: 100%; overflow: visible; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: square; stroke-linejoin: miter; }
+.arrow-icon { position: relative; display: inline-block; width: 15px; height: 15px; flex: 0 0 15px; }
+.arrow-icon::before { position: absolute; top: 7px; left: 1px; width: 15px; height: 2px; background: currentColor; content: ""; transform: rotate(45deg); transform-origin: center; }
+.arrow-icon::after { position: absolute; right: 0; bottom: 0; width: 7px; height: 7px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; content: ""; }
 .archive-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; padding: 8px 0 28px; }
 .archive-label { margin: 0 0 15px; color: #758c00; font-family: 'DM Mono', monospace; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
 .archive-group ul { margin: 0; padding-left: 20px; color: var(--muted); }
